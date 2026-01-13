@@ -69,7 +69,11 @@
 
             selectElem.addEventListener("change", function () {
                 let codeValue = selectElem.value;
-                if (codeValue === "html") {
+                if (codeValue === "") {
+                    cssSection.style.display = "None"
+                    jsSection.style.display = "None"
+                    htmlSection.style.display = "None"
+                } else if (codeValue === "html") {
                     cssSection.style.display = "None"
                     jsSection.style.display = "None"
                     htmlSection.style.display = "block";
