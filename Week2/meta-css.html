@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Week1/ponder/meta-css.css">
+    <title>Week 1 Ponder</title>
+
+    <style>
+        #htmlSection,
+        #cssSection,
+        #jsSection {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1>HTML, CSS, and JS</h1>
+        <p>The foundational technologies that power websites and web applications</p>
+        <hr>
+        <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+
+        <br>
+        <br>
+
+        <label for="webdevlist">Choose One:</label>
+        <select name="code" id="webdevlist">
+            <option value="">Choose One:</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <!-- HTML Section -->
+        <div id="htmlSection">
+            <h2>HyperText Markup Language</h2>
+            <ul class="list">
+                <li>Defines the structure and content of a web page.</li>
+                <li>Without HTML there's nothing for the browser to display.</li>
+            </ul>
+        </div>
+
+        <!-- CSS Section -->
+        <div id="cssSection">
+            <h2>Cascading Style Sheets</h2>
+            <ul class="list">
+                <li>Controls how the HTML elements look.</li>
+                <li>Without CSS pages look plain and unstyled.</li>
+            </ul>
+        </div>
+
+        <!-- JS Section -->
+        <div id="jsSection">
+            <h2>JavaScript</h2>
+            <ul class="list">
+                <li>Adds interactivity and dynamic behavior.</li>
+                <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+            </ul>
+        </div>
+
+        <script>
+            let selectElem = document.getElementById("webdevlist");
+            let htmlSection = document.getElementById("htmlSection");
+            let cssSection = document.getElementById("cssSection");
+            let jsSection = document.getElementById("jsSection");
+
+            selectElem.addEventListener("change", function () {
+                let codeValue = selectElem.value;
+                if (codeValue === "html") {
+                    cssSection.style.display = "None"
+                    jsSection.style.display = "None"
+                    htmlSection.style.display = "block";
+
+                } else if (codeValue === "css") {
+                    htmlSection.style.display = "None"
+                    jsSection.style.display = "None"
+                    cssSection.style.display = "block";
+
+                } else if (codeValue === "js") {
+                    cssSection.style.display = "None";
+                    htmlSection.style.display = "None"
+                    jsSection.style.display = "block";
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>

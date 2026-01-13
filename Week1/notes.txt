@@ -1,0 +1,5 @@
+() means function
+$0 means select item that is already highlighted
+
+/n is new line
+/r is return (not as used anymore, and not used on Mac)

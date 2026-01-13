@@ -1,0 +1,27 @@
+Variables
+
+let name = 'Jace Kelley';
+const name = 'Jace Kelley';
+
+const is constant
+let is variable
+
+quotes declares string
+
+Will remember name, scope, and value
+Name: Name 
+Scope: Global
+Value: 'Jace Kelley'
+
+Name: Age
+Scope: Global
+Value: #
+
+list and array are the same thing. basically. 
+
+DOM is the browswers way of chopping up the html and stuff
+    Document Object Model
+
+
+=== means make it equal, down to the binary. 
+True does not === 1
