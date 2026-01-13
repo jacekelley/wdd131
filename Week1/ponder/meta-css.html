@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Week 1 Ponder</title>
 
 </head>
+
 <body>
     <div id="content">
         <h1>HTML, CSS, and JS</h1>
@@ -30,8 +32,18 @@
                 <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
             </ul>
         </div>
+        <label for="webdevlist">Choose a topic:</label>
+        <select name="code" id="webdevlist">
+            <option value="">--Select One--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <div id="output"></div>
     </div>
 
-<script src="week1.js"></script> 
+    <script src="week1.js"></script>
 </body>
+
 </html>
