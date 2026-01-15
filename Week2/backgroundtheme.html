@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Dynamic Web Fundamentals</title>
+    <style>
+        body {
+            background-size: 100vw 100vh;
+            margin: 0;
+            padding: 20px;
+            transition: background-image 1s ease;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        select {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        #logo {
+            margin-top: 1rem;
+            width: 300px;
+        }
+
+        .content {
+            margin-top: 3rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pick a Theme</h1>
+        <select id="theme-select">
+            <option value="">-- Select a Theme --</option>
+            <option value="ocean">Ocean</option>
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+        </select>
+        <div class="content">
+            <p>Try switching themes to change the page's look!</p>
+        </div>
+        <img id="logo" src=" https://wddbyui.github.io/wdd131/images/wdd131.png" alt="WDD131 Dynamic Web Logo">
+    </div>
+</body>
+<script>
+    let selectElem = document.querySelector('#theme-select');
+    let pageContent = document.querySelector('body');
+
+    selectElem.addEventListener('change', changeTheme);
+
+    function changeTheme() {
+        let current = selectElem.value;
+        if (current === 'ocean') {
+            document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/ocean.jpg')";
+            pageContent.style.fontFamily = "Papyrus, fantasy";
+        } else if (current === 'forest') {
+            document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/forest.jpg')";
+            pageContent.style.fontFamily = "Impact, sans-serif";
+        } else if (current === 'desert') {
+            document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/desert.jpg')";
+            pageContent.style.fontFamily = "'Big Caslon', serif";
+        } else {
+            // default
+            document.body.style.backgroundImage = "none";
+            pageContent.style.fontFamily = "Georgia, serif";
+        }
+    }
+</script>
+
+</html>

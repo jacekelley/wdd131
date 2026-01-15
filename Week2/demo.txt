@@ -25,3 +25,23 @@ DOM is the browswers way of chopping up the html and stuff
 
 === means make it equal, down to the binary. 
 True does not === 1
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+addEventListener is something that can "listen" to the program. 
+    Needs to know what the event is, and function
+
+    DOMContentLoaded happens when html is fully loaded
+
+    listen to event, what do when event occurs
+
+document.addEventListener('DOMContentLoaded' , dosomething);
+
+
+
+this: can navigate a tree 
+    Can reorder the tree
+    add/remove nodes and stuff to tree
+    Where am I on this tree? refers to scope you are currently in
