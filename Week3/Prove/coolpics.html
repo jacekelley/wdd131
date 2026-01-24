@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="coolpics.css">
 </head>
+
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
         <nav>
-            <h2>Home</h2>
-            <h2>People</h2>
-            <h2>Places</h2>
-            <h2>About</h2>
-            <h2>Contact</h2>
+            <div class="menubutton">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+                        fill-rule="nonzero" />
+                </svg>
+            </div>
+            <a href="">Home</a>
+            <a href="">People</a>
+            <a href="">Places</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
         </nav>
     </header>
     <h3>Current Work</h1>
-    <div class="images">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-        <img src="coolpic.jpg" alt="Image">
-    </div>
-    <footer>
-        <h2>&copy;2025 Not a real site 🟡</h2>
-    </footer>
+        <div class="images">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+            <img src="coolpic.jpg" alt="Image">
+        </div>
+        <footer>
+            <h2>&copy;2025 Not a real site 🟡</h2>
+        </footer>
+
+        <script>
+            const menubutton = document.querySelector(".menubutton");
+            const nav = document.querySelector("nav");
+
+            menubutton.addEventListener("click", () => {
+                nav.classList.toggle("open");
+            });
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 700) {
+                    nav.classList.remove("open");
+                }
+            });
+        </script>
+
 </body>
+
 </html>
