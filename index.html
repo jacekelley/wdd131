@@ -10,17 +10,24 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <h1>WDD131</h1>
-            <p>Jace Kelley</p>
-        </header>
-        <a href="Week1/ponder/meta-css.html" target="_blank" >meta-css.html</a>
-        <a href="Week1/prove/mission.html" target="_blank" >mission</a>
+        <div id="header-placeholder"></div>
+
+
+        <a href="Week1/ponder/meta-css.html" target="_blank">meta-css.html</a>
+        <a href="Week1/prove/mission.html" target="_blank">mission</a>
         <a href="Week2/meta-css.html" target="_blank">meta-css.html with JavaScript</a>
         <a href="Week2/backgroundtheme.html" target="_blank">Background Theme</a>
-        <a href="Week3/Ponder/Week3Ponder.html" target="_blank" >Responsive Design</a>
+        <a href="Week3/Ponder/Week3Ponder.html" target="_blank">Responsive Design</a>
         <a href="Week3/Prove/coolpics.html">Cool Pics</a>
     </div>
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
 </body>
+
 
 </html>

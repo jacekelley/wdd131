@@ -3,29 +3,44 @@
     box-sizing: border-box;
     padding: 0;
     text-decoration: none;
-}
+} 
 
 body {
     display: flex;
     background: black;
-
     align-items: center;
     justify-content: center;
 }
 
 #wrapper {
     margin-top: 20px;
-    background: #006600;
+    background: #004400;
     width: 90%;
     min-height: 500px;
 }
 
 header{
-    display: block;
-    padding:40px;
+    border-radius:15%;
     text-align: center;
-    min-height: 200px;
-    background: lightblue;
+    margin:20px;
+    padding-top:20px;
+    background: #007694;
+    overflow:hidden;
+    box-shadow: 3px 3px 15px black;
+}
+
+nav{
+    height:75px;
+    margin-top:20px;
+    background:green;
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    color:black;
+    font-size: 30px;
+    margin:20px 40px;
 }
 
 header h1{
