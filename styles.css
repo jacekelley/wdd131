@@ -30,7 +30,6 @@ header{
 }
 
 nav{
-    height:75px;
     margin-top:20px;
     background:green;
     display:flex;
