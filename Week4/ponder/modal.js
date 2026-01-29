@@ -13,7 +13,6 @@ function openModal(e) {
         const fullSrc = smallSrc.replace("-sm.jpg", "-full.jpg");
 
         modalImage.src = fullSrc;
-        modalImage.alt = e.target.alt;
 
         modal.showModal();
     }
