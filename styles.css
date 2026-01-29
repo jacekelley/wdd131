@@ -39,11 +39,11 @@ nav{
 nav a{
     color:black;
     font-size: 30px;
-    margin:20px 40px;
+    margin:20px 5%;
 }
 
 header h1{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 header p{
