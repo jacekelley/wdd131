@@ -20,13 +20,13 @@
         <a href="Week3/Prove/coolpics.html">Cool Pics</a>
         <a href="Week4/ponder/responsive.html">Responsive JavaScript</a>
     </div>
+    
     <script>
         fetch("nav.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header-placeholder").innerHTML = data;
             });
-        
     </script>
 </body>
 
