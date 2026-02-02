@@ -50,22 +50,39 @@ header p{
     font-size: 2em;
 }
 
-.weeks {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 details {
+    border:2px solid black;
     text-align:center;
     width:80%;
     max-width:600px;
     background:#969696;
     margin:auto;
     margin-top:30px;
+    margin-bottom:20px;
+    box-shadow:3px 3px 10px;
+}
+
+details a{
+    margin-top:10px;
+    display:inline-block;
+    font-size:30px;
+    color:#006600;
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+}
+
+details a:hover{
+    scale: 1.05;
+    color:#004400;
+}
+
+details p{
+    margin:5px;
+    margin-bottom:30px;
 }
 
 summary{
-    border:black solid 2px;
+    border-bottom:2px black solid;
     padding:20px;
     background:gray;
     display:block;
