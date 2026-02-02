@@ -50,6 +50,29 @@ header p{
     font-size: 2em;
 }
 
+.weeks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+details {
+    text-align:center;
+    width:80%;
+    max-width:600px;
+    background:#969696;
+    margin:auto;
+    margin-top:30px;
+}
+
+summary{
+    border:black solid 2px;
+    padding:20px;
+    background:gray;
+    display:block;
+    list-style:none;
+    cursor:pointer;
+}
+
 a{
     margin-top: 50px;
     font-size: 3em;
