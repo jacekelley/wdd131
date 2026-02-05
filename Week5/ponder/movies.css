@@ -78,4 +78,11 @@ header, footer {
     .movie img {
         grid-row: 2 / span 4;
     }
+
+    .main-nav{
+        gap:10%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 }
