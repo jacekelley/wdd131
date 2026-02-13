@@ -7,7 +7,7 @@ const movies = [
     imgAlt: "Miles Morales swinging through the city",
     ages: "10+",
     genre: "Action/Adventure",
-    stars: "⭐⭐⭐⭐⭐"
+    stars: 5
   },
   {
     title: "The Other Side of Heaven",
@@ -17,7 +17,7 @@ const movies = [
     imgAlt: "Poster for The Other Side of Heaven",
     ages: "10+",
     genre: "Drama/Religious",
-    stars: "⭐⭐⭐⭐"
+    stars: 4
   },
   {
     title: "Luca",
@@ -27,7 +27,7 @@ const movies = [
     imgAlt: "Luca and Alberto on the beach",
     ages: "6+",
     genre: "Family/Fantasy",
-    stars: "⭐⭐⭐⭐"
+    stars: 4
   },
   {
     title: "17 Miracles",
@@ -37,14 +37,19 @@ const movies = [
     imgAlt: "Handcart pioneers in snow",
     ages: "12+",
     genre: "Historical/Religious",
-    stars: "⭐⭐⭐⭐"
+    stars: 4
   }
 ];
 
 const movieList = document.querySelector("#movie-list");
-// Loop through movies and add them to HTML
+
 movies.forEach(movie => {
   const article = document.createElement("article");
+  article.classList.add("movie");
+
+
+  const starCount = movie.stars;
+  const starString = "⭐".repeat(starCount);
 
   article.innerHTML = `
     <h2>${movie.title}</h2>
@@ -53,7 +58,13 @@ movies.forEach(movie => {
     <p>${movie.description}</p>
     <p><strong>Age:</strong> ${movie.ages}</p>
     <p><strong>Genre:</strong> ${movie.genre}</p>
-    <p><strong>Rating:</strong> ${movie.stars}</p>
+
+    <p>
+      <strong>Rating:</strong>
+      <span aria-label="Rated ${starCount} out of 5 stars">
+        ${starString}
+      </span>
+    </p>
   `;
 
   movieList.appendChild(article);

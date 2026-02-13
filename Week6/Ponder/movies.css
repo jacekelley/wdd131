@@ -54,6 +54,7 @@ header, footer {
 }
 
 .movie img {
+    border:1px black solid;
     max-width: 100%;
     display: block;
     border-radius: 8px;
