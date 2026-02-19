@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="creditcard.css">
+</head>
+
+<body>
+
+    <h1>Payment Form</h1>
+
+    <form id="cardForm">
+        <div class="card-container">
+
+            <div class="card-back">
+                <div class="card-cvv">
+                    <label for="cvv">CVC/CVV</label>
+                    <input type="text" id="cvv" maxlength="3" placeholder="XXX" required>
+                </div>
+            </div>
+            <div class="card-front">
+                <p class="total">TOTAL: $199</p>
+
+                <div class="card-symbol">💳</div>
+
+                <div class="card-number">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumber" maxlength="16" placeholder="1234123412341234" required>
+                </div>
+
+                <div class="card-name">
+                    <label for="cardName">CARD HOLDER</label>
+                    <input type="text" id="cardName" placeholder="John Doe" required>
+                </div>
+
+                <div id="cardExpiration">
+                    <label id="expirationDate">EXPIRATION</label>
+                    <input type="text" id="month" name="expMonth" placeholder="MM" aria-labelledby="expirationDate"
+                        maxlength="2" required>
+                    <input type="text" id="year" name="expYear" placeholder="YY" aria-labelledby="expirationDate"
+                        maxlength="2" required>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p id="message"></p>
+
+    </form>
+
+    <script src="creditcard.js"></script>
+</body>
+
+</html>
