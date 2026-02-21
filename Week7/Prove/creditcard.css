@@ -1,98 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  background: #eee;
+    font-family: Arial, sans-serif;
+    background: rgb(238, 238, 238);
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-container {
-  position: relative;
-  width: 420px;
-  height: 260px;
-  margin-bottom: 40px;
+    position: relative;
+    width: 420px;
+    height: 260px;
+    margin-bottom: 40px;
 }
 
-
-.card-front,
-.card-back {
-  background: #cfcfcf;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  width: 380px;
-  height: 220px;
+.card-front, .card-back {
+    background: rgb(207, 207, 207);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 10px;
+    position: absolute;
+    width: 380px;
+    height: 220px;
 }
 
 .card-front {
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .card-back {
-  top: 16%;
-  left: 90px;
+    top: 16%;
+    left: 90px;
 }
-
 
 .total {
-  grid-column: span 2;
-  font-size: 1.2rem;
-  font-weight: bold;
+    grid-column: span 2;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-
 
 .card-symbol {
-  grid-column: span 2;
-  text-align: right;
-  font-size: 2rem;
+    grid-column: span 2;
+    text-align: right;
+    font-size: 2rem;
+    transform:translateY(-65px)
 }
-
 
 label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: bold;
-  margin-bottom: 4px;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
-
 
 input {
-  width: 100%;
-  padding: 6px;
-  border-radius: 4px;
-  border: 1px solid #999;
-  font-size: 0.9rem;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(153, 153, 153);
+    font-size: 0.9rem;
 }
 
-#cardExpiration{
-  display:flex;
+#cardExpiration {
+    display: flex;
 }
-
 
 #cardExpiration input {
-  width: 45%;
+    width: 45%;
 }
-
 
 .card-cvv {
-  margin-top: 45%;
-  margin-left:85%;
-  width:40px;
+    margin-top: 30%;
+    margin-left: 85%;
+    width: 40px;
 }
 
+hr {
+    transform: translateX(20px);
+    border: 20px solid black;
+}
 
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 2px solid #555;
-  background: #ddd;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 2px solid rgb(85, 85, 85);
+    background: rgb(221, 221, 221);
+    cursor: pointer;
 }
 
 button:hover {
-  background: #ccc;
+    background: rgb(204, 204, 204);
 }
