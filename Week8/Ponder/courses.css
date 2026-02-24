@@ -1,0 +1,96 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+  background: blue;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  color: #cce3ff;
+  font-weight: 400;
+}
+
+/* Form area */
+label {
+  display: block;
+  margin-bottom: 0.4em;
+  color: #fff;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 180px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #ffcc00;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #ffdb4d;
+  transform: translateY(-1px);
+}
+
+/* Table styling */
+table {
+  margin-top: -250px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+thead {
+  background: #1e3c72;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+tbody tr:hover {
+  background: #e3f2ff;
+  transition: background 0.15s ease;
+}

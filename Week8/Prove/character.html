@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Michael the Hero">
+    <meta property="og:description" content="Character card project for WDD 131.">
+    <meta property="og:image" content="michael.png">
+    <meta property="og:type" content="website">
+
+    <title>Character Card</title>
+    <link rel="stylesheet" href="character.css">
+</head>
+
+<body>
+    <div class="card" aria-label="Character card for Michael">
+
+        <h2 id="name" aria-label="Character name"></h2>
+
+        <p><strong>Class:</strong> <span id="class" aria-label="Character class"></span></p>
+        <p><strong>Level:</strong> <span id="level" aria-label="Character level"></span></p>
+        <p>
+            <strong>Health:</strong>
+            <span id="health" aria-label="Current health"></span> /
+            <span id="maxhealth" aria-label="Maximum health"></span>
+        </p>
+
+        <img id="characterImage" src="michael.png" alt="Michael, a half Gerudo and half Hylian hero"
+            aria-label="Character portrait">
+
+        <div class="buttons">
+            <button onclick="character.attacked()" aria-label="Attack character button">
+                Attacked
+            </button>
+
+            <button onclick="character.levelUp()" aria-label="Level up character button">
+                Level Up
+            </button>
+
+            <button onclick="character.heal()" aria-label="Heal character button">
+                Heal
+            </button>
+        </div>
+
+    </div>
+
+    <script src="character.js"></script>
+</body>
+
+</html>
