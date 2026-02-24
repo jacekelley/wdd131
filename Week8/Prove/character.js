@@ -4,7 +4,7 @@ const character = {
     level: 1,
     health: 100,
     maxhealth: 100,
-    image: "michael.png",
+    image: "Michael.png",
 
     attacked() {
         this.health -= 20;
