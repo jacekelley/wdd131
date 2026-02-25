@@ -10,25 +10,28 @@ const character = {
         this.health -= 20;
         if (this.health <= 0) {
             this.health = 0;
-            alert(this.name + " has died!");
+            alert(this.name + " has died!")
         }
-        updateCard();
+        updateCard()
+
     },
 
-    levelUp() {
+    levelup() {
         this.level += 1;
         this.maxhealth = 100 + (this.level - 1) * 20;
         this.health = this.maxhealth;
-        updateCard();
+        updateCard()
+
     },
 
     heal() {
         if (this.health < this.maxhealth) {
-            this.health += 20;
+            this.health = this.health + 20;
         }
-        updateCard();
+        updateCard()
+
     }
-};
+}
 
 function updateCard() {
     document.getElementById("name").textContent = character.name;
@@ -36,7 +39,6 @@ function updateCard() {
     document.getElementById("level").textContent = character.level;
     document.getElementById("health").textContent = character.health;
     document.getElementById("maxhealth").textContent = character.maxhealth;
-    document.getElementById("characterImage").src = character.image;
+    document.getElementById("characterimage").src = character.image;
 }
-
-updateCard();
+updateCard()
