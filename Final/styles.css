@@ -1,0 +1,84 @@
+	/* •	Dark green: #1f3d2b
+	•	Gold: #c6a539
+	•	Light parchment: #f5f1dc
+	•	Brown accent: #6b4f2a
+	•	Red: #e7382f */
+
+
+@font-face {
+    font-family: "Triforce";
+    src: url("fonts/Triforce.ttf");
+}
+
+body {
+    background: black;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+	min-height:100vh;
+    margin: 0 auto;
+    background: #1f3d2b;
+}
+
+header {
+    display: flex;
+    background: url(images/header_background.png);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    align-items: center;       
+    justify-content: center;    
+    gap: 20px;                  
+    font-family: "Triforce", sans-serif;
+    color: #c6a539;
+    font-size: 220%;
+    text-shadow: 2px 2px 4px #000000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+    object-fit: contain;
+    margin:5% -5% 5% 5%;
+}
+
+header h1 {
+    flex: 1;                     
+    text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+#hero{
+	display:flex;
+	justify-content:center;
+	margin-top:20px;
+}
+
+#hero img{
+	width:95%;
+}
+
+#welcome{
+	color:#f5f1dc;
+	text-align:center;
+	margin:20px 40px 20px 40px;
+	font-size:2em;
+}
+
+@media screen and (max-width: 800px) {
+    #wrapper {
+        width: 100%;
+    }
+    header h1{
+        font-size:1em;
+        margin:40px 10px 20px 10px
+    }
+    .logo{
+        display:none;
+    }
+}
