@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelda Quiz</title>
+    <title>Zelda Adventure Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/triforce.webp">
 </head>
@@ -23,11 +23,48 @@
 
         <div id="welcome">
             <p>Welcome to the Zelda Adventure Quiz! Test your skills and help the hero on his quest! Gain hearts by
-                answering questions correctly, but beware losing them!</p>
-            <img src="images/pixel_hearts.png" alt="Pixel Hearts">
+                answering questions correctly, but beware losing them!
+            </p>
+            <div id="hearts"></div>
         </div>
-    </div>
 
+        <div class="choices">
+
+            <div class="choice">
+                <button id="beginner" class="beginner">Beginner</button>
+                <div class="desc">
+                    <ul>
+                        <li>New to Zelda?</li>
+                        <li>This mode is for beginners!</li>
+                        <li>It will ask you basic questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="choice">
+                <button id="nerd" class="nerd">Expert</button>
+                <div class="desc">
+                    <ul>
+                        <li>Think you know Zelda?</li>
+                        <li>This mode is for experts!</li>
+                        <li>It will ask you difficult questions</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="startbutton">
+            <button>Begin Adventure</button>
+        </div>
+
+        <footer>
+            <img src="images/triforce.webp" alt="Triforce Logo" class="foot-logo">
+            <p>&copy; 2023 Zelda Adventure Quiz. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
