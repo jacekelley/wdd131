@@ -1,3 +1,5 @@
+// 10 questions for each difficulty level, with 4 options and the correct answer specified.
+
 const easyQuestions = [
     {
         question: "Who is the main hero of The Legend of Zelda series?",
@@ -28,11 +30,6 @@ const easyQuestions = [
         question: "Which item is used to permanently increase Link's maximum health?",
         options: ["Bow", "Heart Container", "Bomb", "Boomerang"],
         answer: "Heart Container"
-    },
-    {
-        question: "Which instrument does Link use to play magic songs in Majora's Mask?",
-        options: ["Ocarina", "Flute", "Harp", "Drum"],
-        answer: "Ocarina"
     },
     {
         question: "What is the name of Link's iconic horse?",
@@ -98,6 +95,41 @@ const easyQuestions = [
         question: "In which game does Link gain the ability to transform into a wolf?",
         options: ["Twilight Princess", "Majora's Mask", "Ocarina of Time", "The Wind Waker"],
         answer: "Twilight Princess"
+    },
+    {
+        question: "In Breath of the Wild, what are the four giant mechanical machines used to fight Ganon called?",
+        options: ["Divine Beasts", "Guardians", "Zonai Constructs", "Titans"],
+        answer: "Divine Beasts"
+    },
+    {
+        question: "What is the name of the small, leaf-masked forest spirits that hide all over Hyrule?",
+        options: ["Koroks", "Kokiri", "Deku", "Fairies"],
+        answer: "Koroks"
+    },
+    {
+        question: "Which race of people live in the rocky, volcano-filled area of Death Mountain?",
+        options: ["Hylians", "Zora", "Gorons", "Gerudo"],
+        answer: "Gorons"
+    },
+    {
+        question: "What legendary item does Link use to travel across the sea in The Wind Waker?",
+        options: ["A Raft", "The King of Red Lions", "The Epona Boat", "A Zora Scale"],
+        answer: "The King of Red Lions"
+    },
+    {
+        question: "The Triforce is made up of three parts: Wisdom, Courage, and which other piece?",
+        options: ["Power", "Strength", "Justice", "Magic"],
+        answer: "Power"
+    },
+    {
+        question: "What is the name of the desert-dwelling race of women that Ganondorf originally belonged to?",
+        options: ["Sheikah", "Gerudo", "Twili", "Rito"],
+        answer: "Gerudo"
+    },
+    {
+        question: "Which race was Link raised as at the beginning of Ocarina of Time?",
+        options: ["Kokiri", "Goron", "Hylian", "Rito"],
+        answer: "Kokiri"
     }
 ];
 const hardQuestions = [
