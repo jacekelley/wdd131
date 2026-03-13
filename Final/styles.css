@@ -222,6 +222,7 @@ footer{
 	}
 	#hearts{
 		height:3.55vw;
+		margin-bottom:0;
 	}
 	.choices .desc{
 		font-size:1em;
@@ -229,5 +230,8 @@ footer{
 	}
 	footer{
 		font-size:.9em;
+	}
+	#startbutton{
+		margin-top:50px;
 	}
 }   
