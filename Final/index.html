@@ -22,16 +22,16 @@
         </div>
 
         <div id="welcome">
-            <p>Welcome to the Zelda Adventure Quiz! Test your skills and help the hero on his quest! Gain hearts by
-                answering questions correctly, but beware losing them!
+            <p>Welcome to the Zelda Adventure Quiz! Test your skills and help the hero on his quest! The more questions
+                you get right, the higher your score will be!
             </p>
             <div id="hearts"></div>
         </div>
 
-        <div class="choices">
+        <div class="diffchoices">
 
-            <div class="choice">
-                <button id="beginner" class="beginner">Beginner</button>
+            <div class="diffchoice">
+                <button id="beginner" class="beginner" data-difficulty="easy">Beginner</button>
                 <div class="desc">
                     <ul>
                         <li>New to Zelda?</li>
@@ -41,8 +41,9 @@
                 </div>
             </div>
 
-            <div class="choice">
-                <button id="nerd" class="nerd">Expert</button>
+            <div class="diffchoice">
+                <button id="nerd" class="nerd" data-difficulty="hard">Expert</button>
+
                 <div class="desc">
                     <ul>
                         <li>Think you know Zelda?</li>
@@ -68,3 +69,11 @@
 </body>
 
 </html>
+
+<!-- •	Setup: Create project files (HTML, CSS, JS).
+	•	Main page: Show info and let user pick difficulty.
+	•	Quiz page: Show questions and answer choices.
+	•	Interactivity: Highlight selections, move through questions, track score.
+	•	Data: Store questions and answers in JS.
+	•	Testing: Make sure navigation, selection, and scoring work.
+	•	Responsive design: Works on desktop and mobile. -->
