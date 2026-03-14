@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="recipes.css">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Social Preview -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Simple Recipe Book">
     <meta property="og:description" content="A collection of easy and delicious recipes.">
     <meta property="og:url" content="https://githubusername.github.io/wdd131/recipes">
     <meta property="og:image" content="images/social-preview-image.png">
 
+    <!-- Twitter Preview -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simple Recipe Book">
     <meta name="twitter:description" content="A collection of easy and delicious recipes.">
     <meta name="twitter:image" content="images/social-preview-image.png">
 
-    <link rel="icon" href="/favicon.ico">
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
 </head>
 
 <body>
 
-    <header class="header">
+<header class="header" role="banner">
 
-        <div class="logo-title">
-            <img src="images/recipe-book.png" alt="Recipe Book Logo">
-            <h1>Recipe Book</h1>
-        </div>
+    <div class="logo-title">
+        <img src="images/recipe-book.png" alt="Recipe Book Logo">
+        <h1>Recipe Book</h1>
+    </div>
 
-        <div class="search">
-            <input type="text" placeholder="Search recipes">
-            <button>
-                <img src="images/search.svg" alt="search icon">
-            </button>
-        </div>
+    <form class="search" id="searchForm">
+        <label for="searchInput" class="visually-hidden">Search recipes</label>
+        <input id="searchInput" type="text" placeholder="Search recipes by name, tag, or description">
+        <button id="searchBtn" type="button" aria-label="Search recipes">
+            <img src="images/search.svg" alt="">
+        </button>
+    </form>
 
-    </header>
-
-
-    <main class="recipe">
-
-        <img class="recipe-img" src="images/apple-crisp.jpg" alt="Apple Crisp">
-
-        <div class="recipe-info">
-
-            <h2>Apple Crisp</h2>
-
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">☆</span>
-            </span>
-
-            <p class="description">
-                A warm apple crisp made with cinnamon, oats, and brown sugar. Perfect for fall evenings and easy to make
-                for the whole family.
-            </p>
-
-        </div>
-
-    </main>
+</header>
 
 
-    <footer>
+<main id="recipeContainer" role="main">
 
-        <div class="social">
+    <section id="recipes" aria-live="polite">
+        <!-- Recipes will be inserted here by JavaScript -->
+    </section>
+
+</main>
 
 
-            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+<footer>
 
-        </div>
+    <div class="social">
 
-        <p>
-            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-                Recipe icons created by Freepik - Flaticon
-            </a>
-        </p>
+        <a href="#">
+            <img src="images/instagram_icon.svg" alt="Instagram icon">
+        </a>
 
-    </footer>
+        <a href="#">
+            <img src="images/youtube_icon.svg" alt="YouTube icon">
+        </a>
+
+        <a href="#">
+            <img src="images/pinterest_icon.svg" alt="Pinterest icon">
+        </a>
+
+    </div>
+
+    <p class="credits">
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a>
+    </p>
+
+</footer>
+
+<script src="recipes.js"></script>
 
 </body>
-
 </html>
