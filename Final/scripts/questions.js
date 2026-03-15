@@ -1,5 +1,3 @@
-// 10 questions for each difficulty level, with 4 options and the correct answer specified.
-
 const easyQuestions = [
     {
         question: "Who is the main hero of The Legend of Zelda series?",
@@ -67,19 +65,9 @@ const easyQuestions = [
         answer: "Ocarina of Time"
     },
     {
-        question: "Which magical item allows Link to see invisible objects or through fake walls?",
-        options: ["Lens of Truth", "Boomerang", "Hookshot", "Bombs"],
-        answer: "Lens of Truth"
-    },
-    {
         question: "What is the primary currency used in the Zelda series?",
         options: ["Gems", "Coins", "Rupees", "Gold"],
         answer: "Rupees"
-    },
-    {
-        question: "Who is the leader of the Goron tribe in Ocarina of Time?",
-        options: ["Impa", "Ruto", "Link", "Darunia"],
-        answer: "Darunia"
     },
     {
         question: "Which magical rod is traditionally used to cast fire and light torches?",
@@ -127,11 +115,44 @@ const easyQuestions = [
         answer: "Gerudo"
     },
     {
-        question: "Which race was Link raised as at the beginning of Ocarina of Time?",
-        options: ["Kokiri", "Goron", "Hylian", "Rito"],
-        answer: "Kokiri"
-    }
+        question: "Which of these is a common low-level enemy that looks like a small pig or goblin?",
+        options: ["Bokoblin", "Creeper", "Slime", "Goomba"],
+        answer: "Bokoblin"
+    },
+    {
+        question: "In 'The Legend of Zelda: Breath of the Wild', what is the name of the ancient device Link uses as a map and tool?",
+        options: ["The Sheikah Slate", "The Game Boy", "The Pokédex", "The Magic Mirror"],
+        answer: "The Sheikah Slate"
+    },
+    {
+        question: "Who helps Link by giving him a sword in the very first 'The Legend of Zelda' game?",
+        options: ["A Fairy", "Princess Zelda", "A Talking Boat", "An Old Man in a cave"],
+        answer: "An Old Man in a cave"
+    },
+    {
+        question: "Which of these is the name of the giant owl who guides Link in several games?",
+        options: ["Falco", "Kaepora Gaebora", "Hedwig", "Hooty"],
+        answer: "Kaepora Gaebora"
+    },
+    {
+        question: "What do Link's 'Rupees' look like?",
+        options: ["Paper Money", "Small Shells", "Colorful Gems", "Round Metal Coins"],
+        answer: "Colorful Gems"
+    },
+    {
+        question: "What is the name of the massive, sentient tree that often guards the forest and helps Link?",
+        options: ["The Great Deku Tree", "The Whispering Willow", "The Yggdrasil", "The Mana Tree"],
+        answer: "The Great Deku Tree"
+    },
+    {
+        question: "What kind of small, winged creatures can Link catch in a bottle to be automatically revived when his health reaches zero?",
+        options: ["Bees", "Butterflies", "Fireflies", "Fairies"],
+        answer: "Fairies"
+    },
 ];
+
+
+
 const hardQuestions = [
 
     {
@@ -262,7 +283,7 @@ const hardQuestions = [
 
     {
         question: "In Twilight Princess, what is the side effect of wearing the Magic Armor when the player has zero Rupees?",
-        options: ["The armor breaks permanently", "He becomes extremely heavy and slow", "He begins to lose health rapidly", "The armor disappears from his inventory"],
+        options: ["The armor breaks", "He becomes extremely heavy and slow", "He begins to lose health rapidly", "The armor disappears from his inventory"],
         answer: "He becomes extremely heavy and slow"
     },
 
@@ -304,7 +325,7 @@ const hardQuestions = [
 
     {
         question: "What is the official name of the character that resides in the toilet at the Stock Pot Inn in Majora's Mask?",
-        options: ["Akat", "???", "Pappy", "Hand-kun"],
+        options: ["Akat", "???", "...", "Hand-kun"],
         answer: "???"
     },
 
@@ -312,6 +333,155 @@ const hardQuestions = [
         question: "Who is the leader of the Yiga Clan encountered during the 'Autobuild' questline in Tears of the Kingdom?",
         options: ["Master Kohga", "Sooga", "Astor", "Maz Koshia"],
         answer: "Master Kohga"
+    },
+    {
+        question: "How many shrines are there in Zelda Tears of the Kingdom?",
+        options: ["152", "120", "100", "200"],
+        answer: "152"
+    },
+    {
+        question: "In the 'Downfall Timeline', what is the official name of the conflict where the Seven Sages sealed the Sacred Realm because no hero appeared to stop Ganon?",
+        options: ["The Imprisoning War", "The Great Calamity", "The Sacred War", "The Sealing War"],
+        answer: "The Imprisoning War"
+    },
+    {
+        question: "In 'Majora's Mask', what are the names of the four giants who guard the four regions of Termina?",
+        options: ["The Giants do not have names mentioned within the game", "Darmani, Mikau, Lulu, and Deku butler", "Din, Nayru, Farore, and Hylia", "Odolwa, Goht, Gyorg, and Twinmold"],
+        answer: "The Giants do not have names mentioned within the game"
+    },
+    {
+        question: "Which race in 'Twilight Princess' lives in the City in the Sky and is said to be even closer to the gods than the Hylians ?",
+        options: ["The Rito", "The Oocca", "The Zonai", "The Loftwings"],
+        answer: "The Oocca"
+    },
+    {
+        question: "In 'Ocarina of Time', what is the name of the mask that allows Link to hear the thoughts of Gossip Stones?",
+        options: ["Stone Mask", "Mask of Truth", "Keaton Mask", "Lens of Truth"],
+        answer: "Mask of Truth"
+    },
+    {
+        question: "In 'The Legend of Zelda: Skyward Sword', what is the name of the massive whale-like spirit that guards the skies and protects the Song of the Hero?",
+        options: ["Oshus", "Levias", "Jabu-Jabu", "The Wind Fish"],
+        answer: "Levias"
+    },
+    {
+        question: "In 'The Legend of Zelda: Tears of the Kingdom', which Zonai secret stone belongs to Mineru?",
+        options: ["The Secret Stone of Light", "The Secret Stone of Spirit", "The Secret Stone of Shadow", "The Secret Stone of Time"],
+        answer: "The Secret Stone of Spirit"
+    },
+    {
+        question: "In 'Majora's Mask', what is the name of the specific song that Link must play to prove his 'royalty' to the Deku King and gain access to the Woodfall Temple?",
+        options: ["New Wave Bossa Nova", "Elegy of Emptiness", "Song of Healing", "Sonata of Awakening"],
+        answer: "Sonata of Awakening"
+    },
+    {
+        question: "In 'Twilight Princess', who is the only individual in the Light World(besides Link) who is able to see and interact with Midna in her imp form without her hiding in the shadows?",
+        options: ["Ilia", "Telma", "Renado", "Princess Zelda"],
+        answer: "Princess Zelda"
+    },
+    {
+        question: "In 'The Wind Waker', what is the name of the island where Link must go to find the Powerlings (Power Bracelets) inside a volcano?",
+        options: ["Dragon Roost Island", "Ice Ring Isle", "Fire Mountain", "Mount Hylia"],
+        answer: "Fire Mountain"
+    },
+    {
+        question: "In 'Skyward Sword', what is the name of the ancient robot who is the 'Captain' of the Sandship in Lanayru Desert?",
+        options: ["Gondo", "Scrapper", "Lanayru", "Skipper"],
+        answer: "Skipper"
+    },
+    {
+        question: "In 'The Legend of Zelda: Twilight Princess', what is the name of the hidden village inhabited by the last member of the tribe that guarded the Royal Family?",
+        options: ["Lurelin Village", "Ordon Village", "Kakariko Village", "Hidden Village"],
+        answer: "Hidden Village"
+    },
+    {
+        question: "Which race was Link raised as at the beginning of Ocarina of Time?",
+        options: ["Kokiri", "Goron", "Hylian", "Rito"],
+        answer: "Kokiri"
+    },
+    {
+        question: "In 'The Legend of Zelda: Ocarina of Time', what is the name of the 'other' composer brother who, along with his brother Sharp, wrote the 'Sun's Song'?",
+        options: ["Natural", "Crescendo", "Minor", "Flat"],
+        answer: "Flat"
+    },
+    {
+        question: "In 'Twilight Princess', the 'Ancient Sky Book' is written in a specific language that Link must help restore. What is the name of this language?",
+        options: ["Hylian (Ancient)", "Zonai", "Sky Writing", "Gerudo Typology"],
+        answer: "Sky Writing"
+    },
+    {
+        question: "In 'The Wind Waker', what is the name of the specific island where Link must go to receive the 'Fire and Ice Arrows' from the Queen of Fairies?",
+        options: ["Mother and Child Isles", "Star Belt Archipelago", "Forest Haven", "Dragon Roost Island"],
+        answer: "Mother and Child Isles"
+    },
+    {
+        question: "In 'The Legend of Zelda: Tears of the Kingdom', what is the name of the Sage of Lightning?",
+        options: ["Buliara", "Riju", "Urbosa", "Patricia"],
+        answer: "Riju"
+    },
+    {
+        question: "In 'Link's Awakening', what is the name of the wind-fish's dream-world that Link is trapped in?",
+        options: ["Holodrum", "Labrynna", "Termina", "Koholint Island"],
+        answer: "Koholint Island"
+    },
+    {
+        question: "In 'The Legend of Zelda: The Wind Waker', what is the name of the previous Sage of Wind whose spirit remains in the Gale Temple after being killed by Ganondorf's followers?",
+        options: ["Fado", "Laruto", "Gulley", "Makar"],
+        answer: "Fado"
+    },
+    {
+        question: "In 'The Wind Waker', what is the name of the Rito who serves as the attendant to the Great Valoo?",
+        options: ["Komali", "Skinner", "Medli", "Quill"],
+        answer: "Medli"
+    },
+    {
+        question: "In 'Ocarina of Time', which Sage is the first to be awakened after Link pulls the Master Sword?",
+        options: ["Darunia", "Impa", "Saria", "Rauru"],
+        answer: "Rauru"
+    },
+    {
+        question: "What is the name of the goddess who stayed on the surface to protect the humans after the others fled to the sky?",
+        options: ["Nayru", "Din", "Hylia", "Farore"],
+        answer: "Hylia"
+    },
+    {
+        question: "Which Zelda game was the first to introduce the concept of the 'Master Sword'?",
+        options: ["A Link to the Past", "Ocarina of Time", "The Legend of Zelda (1986)", "Zelda II: The Adventure of Link"],
+        answer: "A Link to the Past"
+    },
+    {
+        question: "In 'Ocarina of Time', which item must Link use to prove his connection to the Royal Family to the composer brothers?",
+        options: ["The Ocarina of Time", "Zelda's Lullaby", "The Goron's Ruby", "The Hylian Shield"],
+        answer: "Zelda's Lullaby"
+    },
+    {
+        question: "In 'A Link Between Worlds', what is the name of the kingdom that serves as the 'Dark World' counterpart to Hyrule?",
+        options: ["The Dark World", "Lorule", "Holodrum", "Termina"],
+        answer: "Lorule"
+    },
+    {
+        question: "Which specific Zelda game introduced the character 'Tingle' to the series?",
+        options: ["The Minish Cap", "The Wind Waker", "Majora's Mask", "Ocarina of Time"],
+        answer: "Majora's Mask"
+    },
+    {
+        question: "In 'A Link Between Worlds', why does Princess Hilda seek to steal Hyrule's Triforce for her own kingdom of Lorule?",
+        options: ["Her ancestors destroyed Lorule's Triforce to end war.", "Ganon had already conquered her world.", "She wanted to rule both kingdoms simultaneously.", "She was corrupted by the influence of Yuga."],
+        answer: "Her ancestors destroyed Lorule's Triforce to end war."
+    },
+    {
+        question: "In 'Twilight Princess', what item is used to warp between Portals?",
+        options: ["Skeikah Slate", "The Ocarina of Time", "The Mirror of Twilight", "Midna"],
+        answer: "Midna"
+    },
+    {
+        question: "In 'Breath of the Wild', what is the name of the Sheikah monk who provides the final challenge in the 'Champions Ballad'?",
+        options: ["Monk Maz Koshia", "King Rhoam", "Monk Korgu Chideh", "Impa"],
+        answer: "Monk Maz Koshia"
+    },
+    {
+        question: "In 'The Legend of Zelda: Twilight Princess', what is the specific name of the ancient tribe of sorcerers who created the Fused Shadow?",
+        options: ["The Zonai", "The Dark Interlopers", "The Sheikah", "The Twili"],
+        answer: "The Dark Interlopers"
     }
-
 ];
