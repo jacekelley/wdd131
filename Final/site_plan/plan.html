@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Adventure Quiz - Site Plan</title>
+
+    <link rel="stylesheet" href="plan.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Zelda Adventure Quiz</h1>
+        <h2>Site Plan</h2>
+        <h3>Jace Kelley</h3>
+    </header>
+
+    <main>
+
+        <hr>
+
+        <h2>Purpose</h2>
+        <p>
+            The purpose of this website is to create an interactive quiz that tests a user's knowledge of the
+            Legend of Zelda series. Players will be able to choose a difficulty level and answer trivia
+            questions about characters, locations, and gameplay. The goal is to provide an engaging and fun
+            experience for Zelda fans.
+        </p>
+
+        <hr>
+
+        <h2>Audience</h2>
+        <p>
+            The intended audience for this website is fans of the Legend of Zelda video game series. This
+            includes both casual players who know basic information about the games and experienced players
+            who want to challenge their knowledge with more difficult trivia questions.
+        </p>
+
+        <hr>
+
+        <h2>Dynamic Elements</h2>
+        <p>
+            JavaScript will be used to dynamically display quiz questions and answer choices. The user will
+            select a difficulty level on the home page, and the quiz page will load questions from arrays of
+            objects. When a player selects an answer, JavaScript will check whether it is correct, update the
+            score, and move to the next question. Event listeners will be used to react to button clicks and
+            DOM elements will be updated to show the question, answers, and current score.
+        </p>
+
+        <hr>
+
+        <h2>Logo</h2>
+        <img src="../images/triforce.webp" alt="Triforce Logo" width="200">
+
+        <hr>
+
+        <h2>Color Scheme</h2>
+        <table class="colors">
+            <tr>
+                <th>Primary</th>
+                <th>Secondary</th>
+                <th>Accent 1</th>
+                <th>Accent 2</th>
+            </tr>
+
+            <tr>
+                <td class="primary">#1f3d2b</td>
+                <td class="secondary">#c6a539</td>
+                <td class="accent1">#6b4f2a</td>
+                <td class="accent2">#f5f1dc</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Typography</h2>
+
+        <h4>Heading Font: Triforce</h4>
+        <h4>Paragraph Font: Sans-serif</h4>
+
+        <p>
+            These fonts were chosen to give the site a fantasy feeling similar to the style of the Zelda
+            series while still keeping the text easy to read.
+        </p>
+
+        <hr>
+
+        <h2>Content</h2>
+
+        <h3>Home Page</h3>
+        <p>
+            The home page will introduce the Zelda Adventure Quiz and explain how the quiz works. The user
+            will see a hero image, a short description of the quiz, and buttons to choose a difficulty level
+            such as Beginner or Expert. After selecting a difficulty, the user will click a button to begin
+            the adventure and start the quiz.
+        </p>
+
+        <h3>Quiz Page</h3>
+        <p>
+        The quiz page displays one question at a time along with multiple answer choices. The user will select an answer and click a next button to continue. The page tracks the user's score and updates it as questions are answered correctly. At the end of the quiz, a results section will appear on the same page showing the final score and a message based on performance, along with a button to try again.
+        </p>
+
+        <hr>
+
+        <h2>Site Map</h2>
+        <div class="sitemap">
+            <div class="sm-home">Home</div>
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="sm-page2">Quiz Page</div>
+            <div class="sm-page3">Results</div>
+        </div>
+
+        <hr>
+
+        <h2>Wireframes</h2>
+
+        <h3>Home Page</h3>
+        <p>
+            Header with logo and site title. Below the header is a hero image followed by a welcome message.
+            Under the message are two difficulty buttons (Beginner and Expert) and a start button to begin
+            the quiz. The footer appears at the bottom of the page.
+        </p>
+
+        <h3>Quiz Page</h3>
+        <p>
+            The quiz page contains the header at the top followed by the current question and several answer
+            buttons. Below the answers is a next button and a display showing the current score. The footer
+            appears at the bottom of the page.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
