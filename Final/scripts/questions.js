@@ -390,7 +390,7 @@ const hardQuestions = [
         answer: "Skipper"
     },
     {
-        question: "In 'The Legend of Zelda: Twilight Princess', what is the name of the hidden village inhabited by the last member of the tribe that guarded the Royal Family?",
+        question: "In 'The Legend of Zelda: Twilight Princess', what is the name of the village inhabited by the last member of the tribe that guarded the Royal Family?",
         options: ["Lurelin Village", "Ordon Village", "Kakariko Village", "Hidden Village"],
         answer: "Hidden Village"
     },
