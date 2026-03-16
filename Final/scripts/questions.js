@@ -223,7 +223,7 @@ const hardQuestions = [
 
     {
         question: "In The Wind Waker, how many 'Triforce Shards' must Link salvage from the bottom of the ocean in the original GameCube version?",
-        options: ["3", "5", "8", "10"],
+        options: ["3", "8", "9", "10"],
         answer: "8"
     },
 
