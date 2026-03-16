@@ -338,6 +338,11 @@ footer {
 	cursor:pointer;
 }
 
+#plan{
+	margin:20px;
+	color:#f5f1dc;
+}
+
 @media screen and (max-width: 800px) {
 	#wrapper {
 		width: 100%;
